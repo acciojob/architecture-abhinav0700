@@ -1,16 +1,119 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Architecture Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6ebe6;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 1100px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 10px;
+    }
+    .imageContainer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .imageContainer img {
+      max-width: 100%;
+      height: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td {
+      border: 1px solid #999;
+      vertical-align: top;
+      padding: 10px;
+    }
+    td img {
+      width: 100%;
+      height: auto;
+    }
+    td[colspan] {
+      text-align: center;
+      font-weight: bold;
+    }
+    td:first-child, td:last-child {
+      width: 200px;
+    }
+    td:nth-child(2) {
+      width: 600px;
+    }
+    h3 {
+      margin: 0;
+      padding-bottom: 10px;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container">
+    <!-- Image Container -->
+    <div class="imageContainer">
+      <img src="https://www.mymove.com/wp-content/uploads/2022/04/Modern-house-GettyImages-1208037524.jpg" alt="Modern Architecture">
+    </div>
 
+    <!-- Table -->
+    <table>
+      <!-- Row 1 -->
+      <tr>
+        <td>
+          <img src="https://picsum.photos/id/1011/200/200" alt="Architecture Left">
+        </td>
+        <td>
+          <h3>Unit #5 - Floor Plans</h3>
+          <p>A. Kitchen<br>
+             B. Bathroom<br>
+             C. Using "Slabs"<br>
+             D. Georgian Home<br>
+             E. Sketching Assignment #5</p>
+        </td>
+        <td>
+          <img src="https://picsum.photos/id/1012/200/200" alt="Architecture Right">
+        </td>
+      </tr>
+
+      <!-- Row 2 -->
+      <tr>
+        <td>
+          <img src="https://picsum.photos/id/1013/200/200" alt="House Plan">
+        </td>
+        <td>
+          <h3>Objective</h3>
+          <p>
+            Discuss factors that are important in the design of bedrooms. Plan the size and location of closets for a typical residence. Plan a furniture arrangement for a room. Implement important design considerations for bathrooms. Plan a bathroom that follows solid design principles. Plan the service area of a home by applying good design principles.
+          </p>
+          <p>
+            Design a functional kitchen to meet a family’s needs. Select kitchen appliances that are appropriate for a design. Plan an efficient clothes care center. Describe appropriate dimensions for garage space. Identify the rooms and areas that comprise the living area. Apply design principles to planning a living room. Integrate the furniture in a living room plan. Analyze a dining room using good design principles. Design a functional entry and foyer.
+          </p>
+        </td>
+        <td>
+          <h3>Green Floor</h3>
+          <p>
+            FreeGreen.com offers both sponsored and non-sponsored floor plans. Their goal is to provide consumers with free solutions to their green architectural needs.
+          </p>
+          <a href="#">learn more</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
